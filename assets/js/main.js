@@ -12,12 +12,13 @@ document.getElementById("newGame").addEventListener("click", function(e) {
         botones[i].disabled = false;
         jugador="x";
         turno.innerHTML= "Are you Ready !!! ";
+        ganador1.innerHTML= " ";
     }
 });
 
 document.getElementById("container").addEventListener('click', function(e) {
     e.preventDefault();
-ganador.innerHTML= "hola" ;
+
 
     turnoJugador();
     posibleJugada();
@@ -30,7 +31,7 @@ ganador.innerHTML= "hola" ;
             }
         }
         if (disponible.length == 0) {
-          turno.innerHTML= "Esto es un empate" ;
+          turno.innerHTML= "Esto es un empate ... !!!" ;
         }
     }
 
@@ -69,7 +70,9 @@ ganador.innerHTML= "hola" ;
 
             if (ganador(jugador)) {
                 ganador1.innerHTML= "El jugador ganador es : "+ jugador ;
+
                 disable(true);
+
             }
             jugador = "o";
             turno.innerHTML= "Turno Jugador :" +jugador ;
