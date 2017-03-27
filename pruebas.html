@@ -1,0 +1,13 @@
+<p id="resultado"></p>
+<div id="padre1">
+Padre
+<div id="child1"> Niño N º 1 </div>
+<div id="child2"> Niño N ° 2 </div>
+</div>
+<script>
+var padre1 = document.getElementById ('padre1');
+var result = document.getElementById ('resultado');
+padre1.addEventListener ('mouseover', function (e) {
+result.innerHTML = "El desencadenador del evento tiene la id: "+ e.currentTarget.id;
+}, false);
+</script>

@@ -1,0 +1,11 @@
+
+.tic{
+  width: 100px;
+  margin: 0 auto;
+  padding: 0.5em;
+  border: 1px solid #98be10;
+  background: #f6feda;
+}
+span{
+  border: 1px solid #98be10;
+}
